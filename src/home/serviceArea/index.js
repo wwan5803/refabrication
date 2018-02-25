@@ -51,7 +51,7 @@ export default class Service extends Component {
                         <Content>Experience Design</Content>
                         <Content>User Experience (UX & CX)</Content>
                         <Content>UI & Visual Design</Content>
-                        <div className="action"><Link to='/experience'><PrimaryButton>Learn more</PrimaryButton></Link></div>
+                        <div className="action"><Link to={`${process.env.PUBLIC_URL}/experience`}><PrimaryButton>Learn more</PrimaryButton></Link></div>
                     </MyCard>
                 </Col>
                 <Col xs={{span: 24}} md={{span: 12}} lg={{span: 8}}>
@@ -68,7 +68,7 @@ export default class Service extends Component {
                         </Content>
                         <Content>QA & automated tests
                         </Content>
-                        <div className="action"><Link to='/tech'><PrimaryButton>Learn more</PrimaryButton></Link></div>
+                        <div className="action"><Link to={`${process.env.PUBLIC_URL}/tech`}><PrimaryButton>Learn more</PrimaryButton></Link></div>
                     </MyCard>
                 </Col>
                 <Col xs={{span: 24}} md={{span: 12}} lg={{span: 8}}>
@@ -85,7 +85,7 @@ export default class Service extends Component {
                         <Content>Growth hacking
                         </Content>
                         <Content>Behavioural analysis</Content>
-                        <div className="action"><Link to='/business'><PrimaryButton>Learn more</PrimaryButton></Link></div>
+                        <div className="action"><Link to={`${process.env.PUBLIC_URL}/business`}><PrimaryButton>Learn more</PrimaryButton></Link></div>
                     </MyCard>
                 </Col>
             </Row>

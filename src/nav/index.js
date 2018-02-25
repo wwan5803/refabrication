@@ -100,9 +100,9 @@ export default class Nav extends Component {
                 </a>
             </div>
             <div className="links">
-                <a className="link" href='/experience'>Experience Design</a>
-                <a className="link" href='/tech'>Tech delivery</a>
-                <a className="link" href='/business'>Business design</a>
+                <a className="link" href={`${process.env.PUBLIC_URL}/experience`}>Experience Design</a>
+                <a className="link" href={`${process.env.PUBLIC_URL}/tech`}>Tech delivery</a>
+                <a className="link" href={`${process.env.PUBLIC_URL}/business`}>Business design</a>
             </div>
             <div className="contact">
                 <PrimaryButton onClick={this.handleTopClick}>Get in touch</PrimaryButton>
