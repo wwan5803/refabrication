@@ -16,11 +16,11 @@ ReactDOM.render(
     <div>
         <Router>
             <Switch>
-                <Route exact path="/" component={Home}/>
-                <Route path="/about" component={About}/>
-                <Route path="/experience" component={Experience}/>
-                <Route path="/tech" component={Tech}/>
-                <Route path="/business" component={Business}/>
+                <Route exact path={process.env.PUBLIC_URL + '/'} component={Home}/>
+                <Route path={process.env.PUBLIC_URL + '/about'} component={About}/>
+                <Route path={process.env.PUBLIC_URL + '/experience'} component={Experience}/>
+                <Route path={process.env.PUBLIC_URL + '/tech'} component={Tech}/>
+                <Route path={process.env.PUBLIC_URL + '/business'} component={Business}/>
             </Switch>
         </Router>
         <Nav />
